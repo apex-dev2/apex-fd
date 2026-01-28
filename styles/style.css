@@ -464,3 +464,24 @@ header .container {
     display: flex;
     justify-content: center;
 }
+
+/* CTA : CALL TO ACTION SECTION */
+
+.cta-banner {
+    background-color: var(--text-dark);
+    padding: 5rem 0;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.cta-content h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 2rem;
+    margin-inline: auto;
+    max-width: 500px;
+}
