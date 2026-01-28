@@ -34,6 +34,10 @@
     }
 
     /* PROCESS */
+    .header-img {
+        justify-content: flex-end;
+    }
+
     .process .container {
         display: grid;
         grid-template-columns: 1fr 1.3fr;
