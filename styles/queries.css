@@ -76,4 +76,13 @@
         margin: 0;
         padding: 0 4rem;
     }
+
+    /* PORTFOLIO */
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-header {
+        margin-bottom: 5rem;
+    }
 }
