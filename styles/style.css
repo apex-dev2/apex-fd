@@ -485,3 +485,62 @@ header .container {
     margin-inline: auto;
     max-width: 500px;
 }
+
+/* SERVICES */
+
+.section-bg {
+    background-color: var(--secondary-color);
+    padding: 6rem 0;
+}
+
+.section-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.section-text p {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    max-width: 450px;
+}
+
+.service-card {
+    background: var(--secondary-color);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all .2s linear;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-left: 8px solid var(--primary-color);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    border-left-color: var(--text-dark);
+}
+
+.services-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(165, 61, 255, 0.1);
+    color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
