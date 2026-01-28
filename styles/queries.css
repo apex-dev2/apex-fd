@@ -5,12 +5,14 @@
     }
 
     /* UTILITIES */
+
     .container {
         width: 70%;
         padding: 0;
     }
 
     /* NAVBAR */
+
     .logo .username {
         font-size: 1.4rem;
         font-weight: 600;
@@ -25,6 +27,7 @@
     }
 
     /* HEADER */
+
     header .container {
         display: grid;
         grid-template-columns: 1.2fr 1fr;
@@ -48,6 +51,7 @@
     }
 
     /* CV | ABOUT */
+
     .cv-container {
         top: -40%;
         height: 60vh;
@@ -78,11 +82,18 @@
     }
 
     /* PORTFOLIO */
+
     .portfolio-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .portfolio-header {
         margin-bottom: 5rem;
+    }
+
+    /* CTA */
+
+    .cta-content h2 {
+        font-size: 2.2rem;
     }
 }
