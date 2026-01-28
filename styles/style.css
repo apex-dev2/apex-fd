@@ -273,3 +273,104 @@ header .container {
     object-fit: cover;
     display: block;
 }
+
+/* PROCESS */
+
+.process {
+    background-color: #F0F1F3;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 20rem;
+    position: relative;
+}
+
+.process .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 5rem;
+}
+
+.process-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    text-align: justify;
+}
+
+.process-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .6rem;
+}
+
+.process-card {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    cursor: default;
+    transition: all .2s linear;
+
+    &:hover {
+        scale: 1.05;
+        opacity: .7;
+    }
+}
+
+.process-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4cbfa81;
+    margin-bottom: .6rem;
+}
+
+.process-heading {
+    font-weight: 600;
+    margin-bottom: .4rem;
+}
+
+.process-details {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #556070b7;
+}
+
+.process-card:first-child .process-icon {
+    background-color: var(--primary-color);
+}
+
+/* CV | ABOUT */
+
+.cv-container {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: -12%;
+}
+
+.cv-container .container {
+    width: 90%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.04);
+}
+
+.cv-img-container {
+    display: none;
+}
+
+.cv-info-container {
+    margin-top: 5rem;
+    padding: 0 .5rem;
+}
+
+.cv-info-container p {
+    margin: 1rem 0 2rem 0;
+}
