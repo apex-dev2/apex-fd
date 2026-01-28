@@ -1,0 +1,16 @@
+# OS Metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE - VS Code
+.vscode/
+*.code-workspace
+
+# Node/Bundlers (If you use them in the future)
+node_modules/
+dist/
+.env
+
+# Local Logs
+*.log
