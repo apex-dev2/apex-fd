@@ -10,4 +10,18 @@
         padding: 0;
     }
 
+    /* NAVBAR */
+    .logo .username {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
 }

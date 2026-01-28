@@ -109,3 +109,105 @@ ul {
 .btn-secondary:hover {
     opacity: 0.8;
 }
+
+/* navbar */
+
+nav .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo .letter {
+    background-color: #A53DFF;
+    color: #FFFFFF;
+    width: 45px;
+    height: 45px;
+    font-size: 1.4rem;
+    border-radius: 100px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .username {
+    font-weight: 600;
+    color: #132238;
+}
+
+.nav-links {
+    display: none;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.nav-a:hover,
+.nav-a:active {
+    color: #A53DFF;
+}
+
+/* MENU */
+
+.menu-toggle {
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 100px;
+    background-color: rgba(164, 61, 255, 0.25);
+    color: #132238;
+    width: 35px;
+    height: 35px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-toggle.active {
+    color: #FFFFFF;
+    background-color: #A53DFF;
+}
+
+.menu-list {
+    position: absolute;
+    right: 1rem;
+    top: 90%;
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: .3rem;
+    background-color: #A53DFF;
+}
+
+.menu-list .nav-a,
+.menu-list .btn-primary {
+    display: block;
+    width: 100%;
+    color: #FFFFFF;
+    padding: .6rem;
+    border-radius: 4px;
+}
+
+.menu-list .nav-a:hover,
+.menu-list .btn-primary:hover {
+    color: #FFFFFF;
+    background-color: #5b1499;
+}
