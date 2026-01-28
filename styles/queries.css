@@ -33,10 +33,11 @@
         margin-bottom: 20rem;
     }
 
-    /* PROCESS */
     .header-img {
         justify-content: flex-end;
     }
+
+    /* PROCESS */
 
     .process .container {
         display: grid;
