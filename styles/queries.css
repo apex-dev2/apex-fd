@@ -24,4 +24,13 @@
         display: flex;
     }
 
+    /* HEADER */
+    header .container {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 1rem;
+        padding: 1rem 0;
+        margin-bottom: 20rem;
+    }
+
 }
