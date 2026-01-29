@@ -79,6 +79,28 @@ ul {
     padding: 0 1rem;
 }
 
+.section-padding {
+    padding: 5rem 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    max-width: 500px;
+    margin: 0 auto;
+    color: var(--text-light);
+}
+
 .btns {
     display: flex;
     gap: 0.6rem;
@@ -543,4 +565,21 @@ header .container {
     justify-content: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+
+/* --- HAPPY CLIENTS --- */
+
+.clients-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    opacity: 0.5;
+}
+
+.client-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #b0b0b0;
 }
