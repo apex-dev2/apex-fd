@@ -105,4 +105,11 @@
         gap: 4rem;
         align-items: start;
     }
+
+    /* FOOTER */
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
