@@ -112,4 +112,18 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    /* Contact */
+
+    .contact-card-wrapper {
+        grid-template-columns: 0.8fr 1.2fr;
+        padding: 4rem;
+        gap: 5rem;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
 }
