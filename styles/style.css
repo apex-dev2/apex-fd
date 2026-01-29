@@ -583,3 +583,51 @@ header .container {
     font-weight: 700;
     color: #b0b0b0;
 }
+
+/* --- TESTIMONIALS --- */
+
+.testimonial-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial-wrapper blockquote {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.testimonial-author h4 {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.testimonial-author p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--text-dark);
+    width: 20px;
+    /* Elongated active dot */
+    border-radius: 4px;
+}
