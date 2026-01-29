@@ -628,6 +628,45 @@ header .container {
 .dot.active {
     background-color: var(--text-dark);
     width: 20px;
-    /* Elongated active dot */
     border-radius: 4px;
+}
+
+/* --- FOOTER --- */
+
+.site-footer {
+    background-color: var(--text-dark);
+    color: var(--secondary-color);
+    padding-top: 200px;
+    padding-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
 }
