@@ -72,6 +72,12 @@ ul {
     user-select: none;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -648,46 +654,6 @@ header .container {
     border-radius: 4px;
 }
 
-/* FOOTER */
-
-.site-footer {
-    background-color: var(--text-dark);
-    color: var(--secondary-color);
-    padding-top: 200px;
-    padding-bottom: 3rem;
-    position: relative;
-    z-index: 1;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.footer-links {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.footer-links a {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.9rem;
-    transition: color 0.3s;
-}
-
-.footer-links a:hover {
-    color: #fff;
-}
-
-.copyright {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
-}
-
 /* CONTACT */
 
 .contact-overlap-section {
@@ -709,7 +675,6 @@ header .container {
     /* Desktop layout handles grid-template-columns in queries.css */
 }
 
-/* Contact Left */
 .contact-left .subtitle {
     margin-bottom: 2rem;
     font-size: 0.9rem;
@@ -776,8 +741,6 @@ header .container {
     opacity: 0.8;
 }
 
-
-/* Contact Right (Form) */
 .form-intro {
     font-size: 0.9rem;
     margin-bottom: 2rem;
@@ -811,4 +774,44 @@ header .container {
 .form-group input:focus,
 .form-group textarea:focus {
     border-bottom-color: #A53DFF;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background-color: var(--text-dark);
+    color: var(--secondary-color);
+    padding-top: 200px;
+    padding-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
 }
