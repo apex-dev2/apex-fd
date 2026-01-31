@@ -57,10 +57,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Hint: While mobile menu toggle is ON, switching from smaller screens to bigger screens will close the opened/ON mobile menu dropdown
+let resizeTimer;
 window.addEventListener("resize", () => {
-    if (window.innerWidth > 767) {
-        if (document.getElementById("mobile-menu").classList.contains("menu-list")) {
-            document.getElementById("mobile-menu").classList.remove("menu-list");
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        if (window.innerWidth > 767) {
+            if (document.getElementById("mobile-menu").classList.contains("menu-list")) {
+                document.getElementById("mobile-menu").classList.remove("menu-list");
+            }
         }
-    }
-})
+    }, 250);
+});
