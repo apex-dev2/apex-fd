@@ -259,7 +259,8 @@ nav .container {
 }
 
 .menu-list .nav-a:hover,
-.menu-list .btn-primary:hover {
+.menu-list .btn-primary:hover,
+.menu-list .nav-a.active-link {
     color: #FFFFFF;
     background-color: #5b1499;
 }

@@ -35,16 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll('section[id], header[id]');
     const options = {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.4,
+        rootMargin: '-20% 0px -70% 0px',
+        threshold: 0,
     };
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const currentId = entry.target.getAttribute('id');
+
                 navItems.forEach(link => {
-                    link.classList.remove('active-link');
                     if (link.getAttribute('href') === `#${currentId}`) {
+                        navItems.forEach(l => l.classList.remove('active-link'));
                         link.classList.add('active-link');
                     }
                 });
