@@ -221,6 +221,13 @@ nav .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.menu-toggle span {
+    pointer-events: none;
 }
 
 .menu-toggle.active {
