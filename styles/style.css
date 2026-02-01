@@ -505,11 +505,22 @@ header .container {
     max-width: 450px;
 }
 
+.services-stack {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
 .service-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: var(--secondary-color);
-    border-radius: 10px;
-    padding: 2rem;
-    transition: all .2s linear;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-left: 8px solid var(--primary-color);
 }
@@ -518,13 +529,6 @@ header .container {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
     border-left-color: var(--text-dark);
-}
-
-.services-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 4rem;
 }
 
 .service-card h3 {
