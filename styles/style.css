@@ -115,6 +115,7 @@ ul {
 .btns {
     display: flex;
     gap: 0.6rem;
+    justify-content: center;
 }
 
 .btn-primary,
@@ -284,7 +285,7 @@ header .container {
     padding-bottom: 20rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .header-intro {
@@ -358,7 +359,6 @@ header .container {
 
 .process-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: .6rem;
 }
 
@@ -383,18 +383,18 @@ header .container {
     align-items: center;
     justify-content: center;
     background-color: #e4cbfa81;
-    margin-bottom: .6rem;
+    margin-bottom: 1rem;
     padding: .5rem;
     color: var(--primary-color);
 }
 
 .process-heading {
     font-weight: 600;
-    margin-bottom: .4rem;
+    margin-bottom: 1rem;
 }
 
 .process-details {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: #556070b7;
 }
@@ -409,16 +409,13 @@ header .container {
     width: 100%;
     height: 50vh;
     position: absolute;
-    top: -7%;
+    top: -20%;
 }
 
 .cv-container .container {
     width: 90%;
     height: 100%;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--secondary-color);
     box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.04);
 }
@@ -434,6 +431,7 @@ header .container {
 }
 
 .cv-info-container p {
+    text-align: justify;
     margin: 1rem 0 2rem 0;
 }
 
@@ -472,6 +470,7 @@ header .container {
 
 .portfolio-card:hover {
     scale: 1.04;
+    border-color: var(--primary-color);
 }
 
 .port-img-wrapper {
@@ -483,7 +482,7 @@ header .container {
 .port-img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     display: block;
 }
 
@@ -650,53 +649,6 @@ header .container {
     to {
         transform: translateX(-50%);
     }
-}
-
-/* TESTIMONIALS */
-
-.testimonial-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.testimonial-wrapper blockquote {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-dark);
-    font-weight: 500;
-    margin-bottom: 2rem;
-}
-
-.testimonial-author h4 {
-    font-weight: 700;
-    color: var(--text-dark);
-}
-
-.testimonial-author p {
-    font-size: 0.9rem;
-    color: var(--text-light);
-}
-
-.dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 2rem;
-}
-
-.dot {
-    width: 8px;
-    height: 8px;
-    background-color: #ddd;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: var(--text-dark);
-    width: 20px;
-    border-radius: 4px;
 }
 
 /* CONTACT */
