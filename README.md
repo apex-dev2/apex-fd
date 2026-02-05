@@ -28,6 +28,11 @@ This project strictly avoids heavy frameworks (React/Vue/Django/SpringBoot etc.)
   * **BEM-ish Naming:** A modified Block-Element-Modifier convention for class names to prevent style leakage.
 * **Vanilla JavaScript (ES6+):**
   * **Intersection Observer API:** Replaces legacy `scroll` event listeners for the "Active Link" highlighting feature to reduce main-thread load and improve scroll performance.
+ 
+### Architecture
+- **CSS Methodology:** BEM-ish naming convention.
+- **Responsiveness:** Mobile-first approach using 'min-width' media queries.
+- **State Management:** URL Hash-based routing + JS ScrollSpy.
 
 ### **Performance Decisions**
 
