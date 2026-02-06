@@ -203,7 +203,7 @@ nav .container {
     position: relative;
 }
 
-.nav-links .nav-a.nav-a.active-link::after {
+.nav-links .nav-a.active-link::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -222,8 +222,8 @@ nav .container {
     border-radius: 100px;
     background-color: rgba(164, 61, 255, 0.25);
     color: #132238;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     font-size: 1.1rem;
     display: flex;
     justify-content: center;
@@ -309,8 +309,6 @@ header .username {
 .intro-stats {
     display: flex;
     gap: 0.1rem;
-    border-radius: 9px;
-    overflow: hidden;
 }
 
 .stat-item {
@@ -318,6 +316,20 @@ header .username {
     background-color: #e4cbfa81;
     text-align: center;
     padding: .5rem 0;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    translate: 0 -3px;
+}
+
+.stat-item:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+.stat-item:last-child {
+    border-radius: 0 12px 12px 0;
 }
 
 .header-img {
@@ -669,12 +681,14 @@ header .username {
 }
 
 .contact-card-wrapper {
-    background: var(--secondary-color);
-    border-radius: 20px;
-    box-shadow: 0 0 20px 2px rgba(164, 61, 255, 0.2);
-    padding: 3rem;
     display: grid;
     gap: 3rem;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 2px rgba(164, 61, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    overflow: hidden;
 }
 
 .contact-left .subtitle {
@@ -761,21 +775,39 @@ header .username {
     margin-bottom: 0.3rem;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 0.5rem 0;
-    font-size: 1rem;
     outline: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0.5rem 0.2rem;
+    font-size: 1rem;
     font-family: inherit;
     transition: border-color 0.3s;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus {
     border-bottom-color: var(--primary-color);
+}
+
+.form-group textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid #132238;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #132238;
+}
+
+.form-group textarea:focus,
+.form-group textarea:active {
+    border-bottom-color: var(--secondary-color);
+}
+
+.form-group textarea::-webkit-scrollbar {
+    width: 0;
 }
 
 .contact-right .btn-primary {
