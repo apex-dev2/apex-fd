@@ -296,6 +296,10 @@ header .container {
     gap: 3rem;
 }
 
+header .username {
+    color: var(--primary-color);
+}
+
 .intro-content {
     display: flex;
     flex-direction: column;
