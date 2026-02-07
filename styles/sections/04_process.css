@@ -1,0 +1,66 @@
+.process {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 15rem;
+    position: relative;
+    background-color: var(--bg-light);
+}
+
+.process .container {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+.process-info {
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.process-cards {
+    display: grid;
+    gap: .6rem;
+}
+
+.process-card {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    cursor: default;
+    transition: all .2s linear;
+}
+
+.process-card:hover {
+    scale: 1.02;
+}
+
+.process-icon {
+    width: 40px;
+    height: 40px;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    background-color: var(--bg-primary);
+}
+
+.process-heading {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.process-details {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.process-card:first-child .process-icon {
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,119 @@
+nav .container {
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo .letter {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.logo .username {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: none;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-a {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--text-dark);
+}
+
+.nav-a:hover,
+.nav-a:active {
+    color: var(--primary-color);
+}
+
+.nav-links .nav-a.active-link {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.nav-links .nav-a.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* Menu */
+
+.menu-toggle {
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 100px;
+    background-color: var(--bg-primary);
+    color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+    line-height: 1;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.menu-toggle span {
+    pointer-events: none;
+}
+
+.menu-toggle.active {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.menu-list {
+    position: absolute;
+    right: 1rem;
+    top: 90%;
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: .3rem;
+    background-color: var(--primary-color);
+}
+
+.menu-list .nav-a,
+.menu-list .btn-primary {
+    display: block;
+    width: 100%;
+    color: var(--secondary-color);
+    padding: .6rem;
+    border-radius: 4px;
+}
+
+.menu-list .nav-a:hover,
+.menu-list .btn-primary:hover,
+.menu-list .nav-a.active-link {
+    color: var(--secondary-color);
+    background-color: var(--bg-dark);
+}

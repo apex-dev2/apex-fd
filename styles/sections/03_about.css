@@ -1,0 +1,28 @@
+.cv-container {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+}
+
+.cv-container .container {
+    width: 90%;
+    border-radius: 12px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 15px 5px var(--shadow-secondary);
+    display: grid;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.cv-img-container {
+    display: none;
+    pointer-events: none;
+}
+
+.cv-info-container {
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    gap: 1.5rem;
+}

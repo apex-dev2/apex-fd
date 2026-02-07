@@ -1,0 +1,100 @@
+#portfolio {
+    padding: 4rem 0;
+    background-color: var(--secondary-color);
+}
+
+.portfolio-header {
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+}
+
+.portfolio-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.portfolio-card {
+    overflow: hidden;
+    border-radius: 12px;
+    transition: all .3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+}
+
+.portfolio-card:hover {
+    scale: 1.01;
+    border-color: var(--primary-color);
+}
+
+.port-img-wrapper {
+    width: 100%;
+    aspect-ratio: 1.5;
+    background-color: var(--secondary-color);
+}
+
+.port-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.port-content {
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: start;
+}
+
+.category {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.port-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+#portfolio .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+        gap: 0.8rem;
+    }
+}
+
+.more-projects {
+    display: flex;
+    justify-content: center;
+}
+
+.port-stack {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.port-stack span {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    background: var(--bg-primary);
+    color: var(--primary-color);
+    border-radius: 4px;
+}

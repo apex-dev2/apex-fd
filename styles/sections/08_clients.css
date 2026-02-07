@@ -1,0 +1,43 @@
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    margin-bottom: 4rem;
+}
+
+.marquee-content {
+    display: flex;
+    gap: 4rem;
+    width: max-content;
+    animation: scroll 30s linear infinite alternate;
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+.client-logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--text-dark);
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.client-logo:hover {
+    opacity: 1;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
