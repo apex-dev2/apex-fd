@@ -1,13 +1,8 @@
-header {
-    width: 100%;
-    position: relative;
-}
-
 header .container {
     min-height: 100vh;
     margin-top: var(--nav-height);
     padding: 2rem 1rem 0 1rem;
-    padding-bottom: 20rem;
+    padding-bottom: 10rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
