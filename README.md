@@ -28,11 +28,13 @@ This project strictly avoids heavy frameworks (React/Vue/Django/SpringBoot etc.)
   * **BEM-ish Naming:** A modified Block-Element-Modifier convention for class names to prevent style leakage.
 * **Vanilla JavaScript (ES6+):**
   * **Intersection Observer API:** Replaces legacy `scroll` event listeners for the "Active Link" highlighting feature to reduce main-thread load and improve scroll performance.
- 
+
 ### Architecture
-- **CSS Methodology:** BEM-ish naming convention.
-- **Responsiveness:** Mobile-first approach using 'min-width' media queries.
-- **State Management:** URL Hash-based routing + JS ScrollSpy.
+
+* **CSS Methodology:** BEM-ish naming convention.
+
+* **Responsiveness:** Mobile-first approach using 'min-width' media queries.
+* **State Management:** URL Hash-based routing + JS ScrollSpy.
 
 ### Architecture
 
@@ -52,11 +54,14 @@ This project strictly avoids heavy frameworks (React/Vue/Django/SpringBoot etc.)
 
 ```text
 /
-├── index.html          # Main application entry point
+├── index.html          # Portfolio Entry Point
 ├── README.md           # Documentation
 ├── assets/             # Static assets (Images optimized for web)
 ├── styles/
-│   ├── style.css       # Core styles, variables, and component logic
-│   └── queries.css     # Media queries for responsiveness (Mobile-First overrides)
+│   ├── main.css       # Parent stylesheet
+│   └── components/    # Variables, Queries, Utilities, & Base styles
+│   └── sections/      # All section-specific styling
 └── scripts/
     └── menu_toggle.js  # Mobile menu logic & ScrollSpy implementation
+    └── form_handler.js # Contact form submission logic
+    └── portfolio.js  # Dynamic Portfolio cards generation script
