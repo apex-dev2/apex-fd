@@ -5,13 +5,13 @@
     <!-- SEO & META TAGS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apex FD - Premier software development in Pakistan & Remotely. Specialized in Flutter mobile apps and high-performance web solutions.">
+    <meta name="keywords"
+        content="Software House Pakistan, App Development, Web Design Pakistan, Website Development Multan, App Development Layyah, Software Engineering in Punjab">
 
-    <!-- TITLE -->
     <title>APEX FD | Portfolio</title>
-
-    <!-- CSS STYLESHEETS -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/queries.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <div class="container">
             <!-- profile | logo -->
             <div class="logo">
-                <a href="/" class="letter unselectable-text">FD</a>
+                <a href="/" class="letter unselectable-text flex">FD</a>
                 <span class="username">APEX FD</span>
             </div>
             <!-- nav links -->
@@ -59,7 +59,7 @@
                 <div class="header-intro">
                     <div class="intro-content">
                         <h1>
-                            Welcome to <br> Appex F&D
+                            Welcome to <br> <span class="username">Apex FD</span>
                         </h1>
                         <p>
                             We are a premier software development company based in Pakistan, specializing in
@@ -94,23 +94,22 @@
         </header>
 
         <!-- PROCESS & CV-OR-SERVICES SECTION -->
-        <div class="process cv">
-            <section class="cv-container" id="about">
-                <div class="container flex">
-                    <div class="cv-img-container">
-                        <img src="assets/Profile.jpg" loading="lazy" alt="Faiz Ahmad">
-                    </div>
-                    <div class="cv-info-container">
-                        <h2>Who We Are?</h2>
-                        <p>
-                            Appex F&D is a forward-thinking technology company focused on <strong> mobile app
-                                development, web development, and quality assurance testing</strong>. We combine
-                            creativity, technical expertise, and a customer-first approach to help businesses
-                            succeed in the digital landscape.
-                        </p>
-                        <div class="btns">
-                            <a href="#portfolio" class="btn-primary">Our Projects</a>
-                            <!-- <a href="assets/cv/Faiz_Ahmad_CV.pdf" class="btn-secondary"
+        <div class="process-about-container">
+            <section class="container" id="about">
+                <div class="img-container">
+                    <img src="assets/Profile.jpg" loading="lazy" alt="Faiz Ahmad">
+                </div>
+                <div class="info-container">
+                    <h2>Who We Are?</h2>
+                    <p>
+                        Apex F&D is a forward-thinking technology company focused on <strong> mobile app
+                            development, web development, and quality assurance testing</strong>. We combine
+                        creativity, technical expertise, and a customer-first approach to help businesses
+                        succeed in the digital landscape.
+                    </p>
+                    <div class="btns">
+                        <a href="#portfolio" class="btn-primary">Our Projects</a>
+                        <!-- <a href="assets/cv/Faiz_Ahmad_CV.pdf" class="btn-secondary"
                                 download="Faiz_Ahmad_Mobile_Dev_CV" target="_blank">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" style="width:1.2em; height:1.2em;">
@@ -119,12 +118,11 @@
                                     <line x1="12" y1="15" x2="12" y2="3"></line>
                                 </svg> Download CV
                             </a> -->
-                        </div>
                     </div>
                 </div>
             </section>
             <section class="container" id="process">
-                <div class="process-info">
+                <div class="info-container">
                     <h2>Our Workflow</h2>
                     <p>
                         We practice industry best practices & professional best practices. Use of relevant tools,
@@ -134,7 +132,7 @@
                 <div class="process-cards">
                     <div class="process-card">
                         <div class="process-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3"
+                            <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -147,8 +145,8 @@
                     </div>
                     <div class="process-card">
                         <div class="process-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-                                stroke-linecap="round" stroke-linejoin="round">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round">
                                 <line x1="18" y1="20" x2="18" y2="10"></line>
                                 <line x1="12" y1="20" x2="12" y2="4"></line>
                                 <line x1="6" y1="20" x2="6" y2="14"></line>
@@ -161,8 +159,8 @@
                     </div>
                     <div class="process-card">
                         <div class="process-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-                                stroke-linecap="round" stroke-linejoin="round">
+                            <svg viewBox="0 0 24 24" fill="currentColor" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round">
                                 <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
                             </svg>
                         </div>
@@ -174,10 +172,16 @@
                     </div>
                     <div class="process-card">
                         <div class="process-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" style="width:1.2em; height:1.2em;">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            <svg viewBox="0 0 24 24" fill="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                                </path>
+                                <path
+                                    d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                                </path>
+                                <path d="M9 12H4s.55-3.03 2-5c1.62-2.2 5-3 5-3"></path>
+                                <path d="M12 15v5s3.03-.55 5-2c2.2-1.62 3-5 3-5"></path>
                             </svg>
                         </div>
                         <h4 class="process-heading">4. Testing</h4>
@@ -188,16 +192,10 @@
 
                     <div class="process-card">
                         <div class="process-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
-                                </path>
-                                <path
-                                    d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
-                                </path>
-                                <path d="M9 12H4s.55-3.03 2-5c1.62-2.2 5-3 5-3"></path>
-                                <path d="M12 15v5s3.03-.55 5-2c2.2-1.62 3-5 3-5"></path>
+                            <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" style="width:1.2em; height:1.2em;">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                             </svg>
                         </div>
                         <h4 class="process-heading">5. Deployment & Support</h4>
@@ -219,176 +217,7 @@
                         project showcases our ability to combine functionality with modern, user-friendly design.
                     </p>
                 </div>
-
                 <div class="portfolio-grid">
-                    <article class="portfolio-card">
-                        <div class="port-img-wrapper">
-                            <img src="assets/MobileApp/01.jpeg" loading="lazy" alt="E-Commerce Application">
-                        </div>
-                        <div class="port-content">
-                            <span class="category">Mobile App</span>
-                            <h3>Modern E‑Commerce Application</h3>
-                            <p>
-                                Comprehensive shopping app enabling product discovery, personalized recommendations, and
-                                seamless checkout—built to
-                                boost sales, improve user engagement, and streamline inventory management.
-                            </p>
-                            <a class="btn-secondary">Case Study
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" style="width:1.2em; height:1.2em;">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-card">
-                        <div class="port-img-wrapper">
-                            <img src="assets/MobileApp/02.jpeg" alt="Food Delivery Applications" loading="lazy">
-                        </div>
-                        <div class="port-content">
-                            <span class="category">Mobile App</span>
-                            <h3>Smart Food Delivery Platform</h3>
-                            <p>
-                                Intuitive mobile app for browsing restaurants, customizing orders, and tracking
-                                real-time deliveries—designed to enhance
-                                convenience, speed, and customer satisfaction with secure payment integration.
-                            </p>
-                            <a class="btn-secondary">Case Study <svg viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" style="width:1.2em; height:1.2em;">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg></a>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-card">
-                        <div class="port-img-wrapper">
-                            <img src="assets/WebApp/01.jpeg" loading="lazy" alt="Dashboard Design">
-                        </div>
-                        <div class="port-content">
-                            <span class="category">Web Apps</span>
-                            <h3>Learning Management System (LMS)</h3>
-                            <p>
-                                A modern, intuitive dashboard interface designed for web and mobile apps, focusing on
-                                clean layout, smooth navigation,
-                                and user-friendly data visualization to enhance user experience.
-                            </p>
-                            <a class="btn-secondary">Case Study <svg viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" style="width:1.2em; height:1.2em;">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg></a>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-card">
-                        <div class="port-img-wrapper">
-                            <img src="assets/WebApp/02.jpeg" loading="lazy" alt="Dashboard Design">
-                        </div>
-                        <div class="port-content">
-                            <span class="category">Web Apps</span>
-                            <h3>Smart Project Management System (PMS)</h3>
-                            <p>
-                                An intelligent dashboard solution that provides real-time task insights, progress
-                                tracking, and performance monitoring
-                                for efficient project execution.
-                            </p>
-                            <a class="btn-secondary">Case Study <svg viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" style="width:1.2em; height:1.2em;">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg></a>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-card">
-                        <div class="port-img-wrapper">
-                            <img src="assets/Website/02.jpeg" loading="lazy" alt="Dashboard Design">
-                        </div>
-                        <div class="port-content">
-                            <span class="category">Website Development</span>
-                            <h3>Enterprise Website Solutions</h3>
-                            <p>
-                                Professional-grade website tailored for corporate branding, service presentation, and
-                                client engagement—featuring
-                                responsive design, SEO optimization, and integrated contact solutions.
-                            </p>
-                            <a class="btn-secondary">Case Study <svg viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" style="width:1.2em; height:1.2em;">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg></a>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-card">
-                        <div class="port-img-wrapper">
-                            <img src="assets/Website/01.jpeg" loading="lazy" alt="Dashboard Design">
-                        </div>
-                        <div class="port-content">
-                            <span class="category">Website Development</span>
-                            <h3>Creative Portfolio Website</h3>
-                            <p>
-                                Sleek and visually engaging portfolio site designed to showcase professional work,
-                                highlight creative skills, and
-                                attract potential clients through elegant layouts and immersive storytelling
-                            </p>
-                            <a class="btn-secondary">Case Study <svg viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" style="width:1.2em; height:1.2em;">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg></a>
-                        </div>
-                    </article>
-                    <article class="portfolio-card">
-                        <div class="port-img-wrapper">
-                            <img src="assets/QATesting/01.jpeg" loading="lazy" alt="Dashboard Design">
-                        </div>
-                        <div class="port-content">
-                            <span class="category">QA Services</span>
-                            <h3>Automated Software Testing Solutions</h3>
-                            <p>
-                                Scalable automation testing framework designed to accelerate release cycles, improve
-                                accuracy, and reduce
-                                costs—leveraging advanced tools and scripts for regression, performance, and continuous
-                                integration testing.
-                            </p>
-                            <a class="btn-secondary">Case Study
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" style="width:1.2em; height:1.2em;">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="portfolio-card">
-                        <div class="port-img-wrapper">
-                            <img src="assets/QATesting/02.jpg" loading="lazy" alt="Dashboard Design">
-                        </div>
-                        <div class="port-content">
-                            <span class="category">QA Services</span>
-                            <h3>Manual Software Testing Services</h3>
-                            <p>
-                                Comprehensive manual testing to validate functionality, usability, and
-                                performance—ensuring software quality through
-                                human-driven test cases, exploratory testing, and detailed defect reporting.
-                            </p>
-                            <a class="btn-secondary">Case Study <svg viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" style="width:1.2em; height:1.2em;">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg></a>
-                        </div>
-                    </article>
                 </div>
                 <!-- <div class="more-projects">
                     <a href="#" class="btn-primary">More Projects</a>
@@ -420,7 +249,7 @@
                         applications, modern websites, web apps & services, along with online stores. Our passion is to
                         design digital user experiences.
                     </p>
-                    <a href="#contact" class="btn-primary">Get into Touch</a>
+                    <a href="#contact" class="btn-primary">Contact us</a>
                 </div>
 
                 <div class="content-wrapper services-stack">
@@ -465,6 +294,24 @@
 
                 <div class="marquee">
                     <div class="marquee-content">
+                        <div class="client-logo">
+                            Google
+                        </div>
+                        <div class="client-logo">
+                            Linkedin
+                        </div>
+                        <div class="client-logo">
+                            Dribble
+                        </div>
+                        <div class="client-logo">
+                            Amazon
+                        </div>
+                        <div class="client-logo">
+                            Spotify
+                        </div>
+
+                        <!-- Duplicates for seamless marquee -->
+
                         <div class="client-logo">
                             Google
                         </div>
@@ -584,31 +431,31 @@
                         <form>
                             <div class="form-group">
                                 <label for="name">Name*</label>
-                                <input type="text" name="name">
+                                <input type="text" name="name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email*</label>
-                                <input type="email" name="email">
+                                <input type="email" name="email" required>
                             </div>
                             <div class="form-group">
                                 <label for="location">Location</label>
-                                <input type="text" name="location">
+                                <input type="text" name="location" required>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="budget">Budget*</label>
-                                    <input type="text" name="budget">
+                                    <input type="text" name="budget" required>
                                 </div>
-                                <div class="form-group">
+                                <div class=" form-group">
                                     <label for="subject">Subject*</label>
-                                    <input type="text" name="subject">
+                                    <input type="text" name="subject" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="message">Message*</label>
-                                <textarea rows="1" name="message"></textarea>
+                                <textarea rows="2" name="message" required></textarea>
                             </div>
 
                             <button class="btn-primary">Submit
@@ -630,7 +477,7 @@
         <div class="container footer-content">
             <div class="logo">
                 <a href="/" class="letter flex unselectable-text">FD</a>
-                <span class="username" style="color:#fff;">Apex FD</span>
+                <span class="username">Apex FD</span>
             </div>
 
             <ul class="footer-links">
@@ -650,6 +497,8 @@
 
     <!-- SCRIPTS -->
     <script src="scripts/menu_toggle.js"></script>
+    <script src="scripts/form_handler.js"></script>
+    <script src="scripts/portfolio.js"></script>
 </body>
 
 </html>

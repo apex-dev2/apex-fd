@@ -1,0 +1,65 @@
+.section-bg {
+    padding: 6rem 0;
+    background-color: var(--secondary-color);
+}
+
+#services .container {
+    align-items: center;
+    justify-content: center;
+}
+
+.section-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.section-text p {
+    max-width: 450px;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.services-stack {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+}
+
+.service-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    border: 1px solid var(--shadow-secondary);
+    background: var(--secondary-color);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 8px solid var(--primary-color);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px var(--shadow-secondary);
+    border-left-color: var(--text-dark);
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: var(--shadow-primary);
+    color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
