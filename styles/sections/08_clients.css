@@ -7,29 +7,14 @@
 
 .marquee-content {
     display: flex;
-    gap: 4rem;
+    gap: 1.5rem;
+    padding: 2rem 0;
     width: max-content;
     animation: scroll 30s linear infinite alternate;
 }
 
 .marquee-content:hover {
     animation-play-state: paused;
-}
-
-.client-logo {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bolder;
-    color: var(--text-dark);
-    opacity: 0.6;
-    transition: opacity 0.3s;
-}
-
-.client-logo:hover {
-    opacity: 1;
 }
 
 @keyframes scroll {
@@ -40,4 +25,73 @@
     to {
         transform: translateX(-50%);
     }
+}
+
+.card {
+    width: 280px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    opacity: 0.9;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    color: var(--text-secondary);
+    background-color: var(--primary-color);
+}
+
+.card:hover {
+    opacity: 1;
+    translate: 0 -3%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-img {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.card-client {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-locality {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+}
+
+.card-rating {
+    color: #dfba49;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.card-description {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card-tag span {
+    float: right;
+    padding: .3rem .6rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    line-height: 1;
+    color: var(--secondary-color);
+    background-color: var(--bg-dark);
 }

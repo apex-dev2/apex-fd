@@ -62,6 +62,7 @@
 
     #about .img-container {
         height: 400px;
+        padding: 0 0 0 2rem;
     }
 
     /* PORTFOLIO */
@@ -103,9 +104,8 @@
     /* Contact */
 
     .contact-card-wrapper {
-        grid-template-columns: 0.8fr 1.2fr;
-        padding: 4rem;
-        gap: 5rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 4rem 3rem;
     }
 
     .form-row {

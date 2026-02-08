@@ -10,7 +10,7 @@ A high-performance, responsive personal portfolio website designed to showcase M
 
 ## 🚀 Live Demo
 
-**[View Live Portfolio](#)**
+**[View Live Portfolio](https://github.com/FaizMuhammad384/apex-fd)**
 
 ---
 
@@ -24,7 +24,7 @@ This project strictly avoids heavy frameworks (React/Vue/Django/SpringBoot etc.)
 * **CSS3 (Modern Architecture):**
   * **CSS Custom Properties (Variables):** Used for global theming (colors, typography, spacing) to ensure maintainability.
   * **CSS Grid:** Utilized for complex 2D layouts (Hero Section, Portfolio Gallery).
-  * **Flexbox:** Utilized for 1D layouts (Navbar, Card internals).
+  * **Flex-box:** Utilized for 1D layouts (Navbar, Card internals).
   * **BEM-ish Naming:** A modified Block-Element-Modifier convention for class names to prevent style leakage.
 * **Vanilla JavaScript (ES6+):**
   * **Intersection Observer API:** Replaces legacy `scroll` event listeners for the "Active Link" highlighting feature to reduce main-thread load and improve scroll performance.
@@ -32,21 +32,19 @@ This project strictly avoids heavy frameworks (React/Vue/Django/SpringBoot etc.)
 ### Architecture
 
 * **CSS Methodology:** BEM-ish naming convention.
-
 * **Responsiveness:** Mobile-first approach using 'min-width' media queries.
 * **State Management:** URL Hash-based routing + JS ScrollSpy.
 
 ### Architecture
 
 * **CSS Methodology:** BEM-ish naming convention.
-
 * **Responsiveness:** Mobile-first approach using 'min-width' media queries.
 * **State Management:** URL Hash-based routing + JS ScrollSpy.
 
 ### **Performance Decisions**
 
 * **Aspect-Ratio Enforcement:** All portfolio images use `aspect-ratio` CSS property to prevent Cumulative Layout Shift (CLS) during loading.
-* **System Fonts First:** Uses a performant font stack falling back to system sans-serif to minimize First Contentful Paint (FCP) delay.
+* **System Fonts First:** Uses a performant font stack falling back to system sans-serif to minimize First Content-ful Paint (FCP) delay.
 
 ---
 

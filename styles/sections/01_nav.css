@@ -21,6 +21,7 @@ nav .container {
     font-weight: 600;
     border-radius: 50px;
     text-decoration: none;
+    flex-shrink: 0;
 }
 
 .logo .username {
