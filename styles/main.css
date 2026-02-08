@@ -1,0 +1,16 @@
+@import 'components/variables.css';
+@import 'components/base.css';
+@import 'components/utilities.css';
+
+@import 'sections/01_nav.css';
+@import 'sections/02_header.css';
+@import 'sections/03_about.css';
+@import 'sections/04_process.css';
+@import 'sections/05_portfolio.css';
+@import 'sections/06_cta.css';
+@import 'sections/07_services.css';
+@import 'sections/08_clients.css';
+@import 'sections/09_contact.css';
+@import 'sections/10_footer.css';
+
+@import 'components/queries.css';

@@ -34,6 +34,13 @@ This project strictly avoids heavy frameworks (React/Vue/Django/SpringBoot etc.)
 - **Responsiveness:** Mobile-first approach using 'min-width' media queries.
 - **State Management:** URL Hash-based routing + JS ScrollSpy.
 
+### Architecture
+
+* **CSS Methodology:** BEM-ish naming convention.
+
+* **Responsiveness:** Mobile-first approach using 'min-width' media queries.
+* **State Management:** URL Hash-based routing + JS ScrollSpy.
+
 ### **Performance Decisions**
 
 * **Aspect-Ratio Enforcement:** All portfolio images use `aspect-ratio` CSS property to prevent Cumulative Layout Shift (CLS) during loading.

@@ -1,0 +1,77 @@
+header .container {
+    min-height: 100vh;
+    margin-top: var(--nav-height);
+    padding: 2rem 1rem 0 1rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.header-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+header .username {
+    color: var(--primary-color);
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.intro-stats {
+    display: flex;
+    gap: 0.1rem;
+}
+
+.stat-item {
+    flex-basis: 100%;
+    text-align: center;
+    padding: .5rem 0;
+    cursor: default;
+    transition: all 0.4s ease;
+    background-color: var(--bg-primary);
+}
+
+.stat-item:hover {
+    translate: 0 -3px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.stat-item:hover h3,
+.stat-item:hover p {
+    color: var(--secondary-color);
+}
+
+.stat-item:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+.stat-item:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+.header-img {
+    display: flex;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
