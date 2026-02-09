@@ -70,6 +70,7 @@ if (marquee) {
         `
         <div class="card">
             <div class="card-header">
+            <div class="card-header-profile">
                 <div class="card-img">
                     <img src="${client.img}" alt="${client.tag}">
                 </div>
@@ -77,6 +78,7 @@ if (marquee) {
                     <span class="client-name">${client.name}</span>
                     <span class="client-locality">(${client.locality})</span>
                 </div>
+            </div>
                 <div class="card-rating">
                     <span class="rating-stars">${client.stars}</span>
                 </div>

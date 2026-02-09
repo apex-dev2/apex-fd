@@ -65,8 +65,15 @@
     border-radius: 100px;
 }
 
+.card-header-profile {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
 .card-client {
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -79,11 +86,12 @@
     color: #dfba49;
     font-size: 0.85rem;
     font-weight: bold;
+    padding: .2rem 0 0 0;
 }
 
 .card-description {
-    font-size: 1rem;
-    text-align: center;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
 }
 
 .card-tag span {
