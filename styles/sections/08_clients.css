@@ -1,13 +1,14 @@
 .marquee {
     width: 100%;
     overflow: hidden;
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, var(--primary-color) 20px, var(--primary-color) calc(100% - 20px), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
     margin-bottom: 2rem;
 }
 
 .marquee-content {
     display: flex;
-    gap: 1.5rem;
+    gap: 0.6rem;
     padding: 2rem 0;
     width: max-content;
     animation: scroll 30s linear infinite alternate;
@@ -18,11 +19,14 @@
 }
 
 @keyframes scroll {
-    from {
+
+    0%,
+    2% {
         transform: translateX(0);
     }
 
-    to {
+    99%,
+    100% {
         transform: translateX(-50%);
     }
 }
@@ -33,7 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.2rem;
     opacity: 0.9;
     overflow: hidden;
     border-radius: 12px;
