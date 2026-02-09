@@ -64,21 +64,22 @@ const clients = [
         description: "Professional QA testing with clear bug reports and quick delivery.",
     },
 ]
+
 const marquee = document.querySelector(".marquee-content");
 if (marquee) {
     marquee.innerHTML = clients.map(client =>
         `
         <div class="card">
             <div class="card-header">
-            <div class="card-header-profile">
-                <div class="card-img">
-                    <img src="${client.img}" alt="${client.tag}">
+                <div class="card-header-profile">
+                    <div class="card-img">
+                        <img src="${client.img}" alt="${client.tag}">
+                    </div>
+                    <div class="card-client">
+                        <span class="client-name">${client.name}</span>
+                        <span class="client-locality">(${client.locality})</span>
+                    </div>
                 </div>
-                <div class="card-client">
-                    <span class="client-name">${client.name}</span>
-                    <span class="client-locality">(${client.locality})</span>
-                </div>
-            </div>
                 <div class="card-rating">
                     <span class="rating-stars">${client.stars}</span>
                 </div>

@@ -2,7 +2,7 @@
     width: 100%;
     overflow: hidden;
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .marquee-content {
