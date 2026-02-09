@@ -92,3 +92,27 @@ if (marquee) {
         `
     ).join('');
 }
+
+function updateMarqueeAnimation() {
+    const marqueeContainer = document.querySelector(".marquee");
+    const marqueeContent = document.querySelector(".marquee-content");
+
+    if (!marqueeContent || !marqueeContainer) return;
+
+    const contentWidth = marqueeContent.scrollWidth;
+    const containerWidth = marqueeContainer.clientWidth;
+    const distance = contentWidth - containerWidth;
+
+    if (distance <= 0) {
+        marqueeContent.style.setProperty('--scroll-end', '0px');
+        return;
+    }
+
+    marqueeContent.style.setProperty('--scroll-end', `-${distance + 50}px`);
+}
+
+document.addEventListener("DOMContentLoaded", updateMarqueeAnimation);
+window.addEventListener("load", updateMarqueeAnimation);
+window.addEventListener("resize", () => {
+    setTimeout(updateMarqueeAnimation, 100);
+});

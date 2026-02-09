@@ -9,9 +9,9 @@
 .marquee-content {
     display: flex;
     gap: 0.6rem;
-    padding: 2rem 0;
+    padding: 2rem;
     width: max-content;
-    animation: scroll 30s linear infinite alternate;
+    animation: scroll 30s ease-in-out infinite alternate;
 }
 
 .marquee-content:hover {
@@ -27,7 +27,7 @@
 
     99%,
     100% {
-        transform: translateX(-50%);
+        transform: translateX(var(--scroll-end, -50%));
     }
 }
 
