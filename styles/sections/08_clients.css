@@ -1,71 +1,91 @@
-.marquee {
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.slider-content {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
     width: 100%;
     overflow: hidden;
     mask-image: linear-gradient(to right, transparent, var(--primary-color) 20px, var(--primary-color) calc(100% - 20px), transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
-    margin-bottom: 2rem;
 }
 
-.marquee-content {
+.btns-container {
     display: flex;
-    gap: 0.6rem;
-    padding: 2rem;
-    width: max-content;
-    animation: scroll 30s ease-in-out infinite alternate;
+    gap: 50%;
 }
 
-.marquee-content:hover {
-    animation-play-state: paused;
+.nav-btn {
+    color: var(--secondary-color);
+    background: var(--text-secondary);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    flex-shrink: 0;
 }
 
-@keyframes scroll {
+.nav-btn:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+}
 
-    0%,
-    2% {
-        transform: translateX(0);
-    }
-
-    99%,
-    100% {
-        transform: translateX(var(--scroll-end, -50%));
-    }
+.nav-btn svg {
+    width: 70%;
+    height: auto;
 }
 
 .card {
-    width: 280px;
+    min-width: 250px;
+    max-width: 250px;
     height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1.2rem;
-    opacity: 0.9;
-    overflow: hidden;
     border-radius: 12px;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     color: var(--text-secondary);
     background-color: var(--primary-color);
+    user-select: none;
 }
 
 .card:hover {
-    opacity: 1;
-    translate: 0 -3%;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* ... Keep existing Card Internal Styles below ... */
 .card-header {
     display: flex;
     justify-content: space-between;
 }
 
 .card-img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     overflow: hidden;
 }
 
 .card-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 100px;
 }
 

@@ -1,6 +1,6 @@
 const clients = [
     {
-        img: "assets/profile.jpg",
+        img: "assets/Profile.jpg",
         tag: "Mobile App",
         name: "Jessica Lee",
         locality: "Singapore",
@@ -8,7 +8,7 @@ const clients = [
         description: "Smooth app experience with strong attention to usability issues.",
     },
     {
-        img: "assets/profile.jpg",
+        img: "assets/Profile.jpg",
         tag: "Mobile App",
         name: "Robert Taylor",
         locality: "Germany",
@@ -16,7 +16,7 @@ const clients = [
         description: "Excellent mobile app quality assurance and detailed testing reports.",
     },
     {
-        img: "assets/profile.jpg",
+        img: "assets/Profile.jpg",
         tag: "Mobile App",
         name: "Ali Khan",
         locality: "Pakistan",
@@ -24,7 +24,7 @@ const clients = [
         description: "App testing and performance were handled very professionally.",
     },
     {
-        img: "assets/profile.jpg",
+        img: "assets/Profile.jpg",
         tag: "Web Dev",
         name: "Sarah Williams",
         locality: "USA",
@@ -32,7 +32,7 @@ const clients = [
         description: "Great web solution. Clean UI and smooth performance across browsers.",
     },
     {
-        img: "assets/profile.jpg",
+        img: "assets/Profile.jpg",
         tag: "Web Dev",
         name: "Daniel Smith",
         locality: "Australia",
@@ -40,7 +40,7 @@ const clients = [
         description: "Website delivered on time with excellent responsiveness and quality.",
     },
     {
-        img: "assets/profile.jpg",
+        img: "assets/Profile.jpg",
         tag: "Web Dev",
         name: "Michael Brown",
         locality: "Canada",
@@ -48,7 +48,7 @@ const clients = [
         description: "Very satisfied with the web project and ongoing support.",
     },
     {
-        img: "assets/profile.jpg",
+        img: "assets/Profile.jpg",
         tag: "SQA",
         name: "John Miller",
         locality: "UK",
@@ -56,7 +56,7 @@ const clients = [
         description: "Excellent SQA services. Manual testing was very detailed and accurate.",
     },
     {
-        img: "assets/profile.jpg",
+        img: "assets/Profile.jpg",
         tag: "SQA",
         name: "Ahmed Hassan",
         locality: "UAE",
@@ -65,15 +65,19 @@ const clients = [
     },
 ]
 
-const marquee = document.querySelector(".marquee-content");
-if (marquee) {
-    marquee.innerHTML = clients.map(client =>
-        `
+document.addEventListener('DOMContentLoaded', () => {
+    const sliderContent = document.querySelector(".slider-content");
+    const prevBtn = document.querySelector(".prev-btn");
+    const nextBtn = document.querySelector(".next-btn");
+
+    if (!sliderContent) return;
+
+    sliderContent.innerHTML = clients.map(client => `
         <div class="card">
             <div class="card-header">
                 <div class="card-header-profile">
                     <div class="card-img">
-                        <img src="${client.img}" alt="${client.tag}">
+                        <img src="${client.img}" alt="${client.tag}" loading="lazy">
                     </div>
                     <div class="card-client">
                         <span class="client-name">${client.name}</span>
@@ -89,30 +93,49 @@ if (marquee) {
                 <span>${client.tag}</span>
             </div>
         </div>
-        `
-    ).join('');
-}
+    `).join('');
 
-function updateMarqueeAnimation() {
-    const marqueeContainer = document.querySelector(".marquee");
-    const marqueeContent = document.querySelector(".marquee-content");
+    let isAnimating = false;
 
-    if (!marqueeContent || !marqueeContainer) return;
+    const getScrollAmount = () => {
+        const card = sliderContent.querySelector(".card");
+        if (!card) return 0;
+        const style = window.getComputedStyle(sliderContent);
+        const gap = parseFloat(style.gap) || 16;
 
-    const contentWidth = marqueeContent.scrollWidth;
-    const containerWidth = marqueeContainer.clientWidth;
-    const distance = contentWidth - containerWidth;
+        return card.offsetWidth + gap;
+    };
 
-    if (distance <= 0) {
-        marqueeContent.style.setProperty('--scroll-end', '0px');
-        return;
-    }
+    const moveNext = () => {
+        if (isAnimating) return;
+        isAnimating = true;
+        const moveAmount = getScrollAmount();
+        sliderContent.style.transition = "transform 0.4s ease-in-out";
+        sliderContent.style.transform = `translateX(-${moveAmount}px)`;
+        setTimeout(() => {
+            sliderContent.style.transition = "none";
+            sliderContent.appendChild(sliderContent.firstElementChild);
+            sliderContent.style.transform = "translateX(0)";
+            isAnimating = false;
+        }, 400);
+    };
 
-    marqueeContent.style.setProperty('--scroll-end', `-${distance + 50}px`);
-}
+    const movePrev = () => {
+        if (isAnimating) return;
+        isAnimating = true;
+        const moveAmount = getScrollAmount();
+        sliderContent.style.transition = "none";
+        sliderContent.prepend(sliderContent.lastElementChild);
+        sliderContent.style.transform = `translateX(-${moveAmount}px)`;
+        void sliderContent.offsetWidth;
+        sliderContent.style.transition = "transform 0.4s ease-in-out";
+        sliderContent.style.transform = "translateX(0)";
+        setTimeout(() => {
+            isAnimating = false;
+        }, 400);
+    };
 
-document.addEventListener("DOMContentLoaded", updateMarqueeAnimation);
-window.addEventListener("load", updateMarqueeAnimation);
-window.addEventListener("resize", () => {
-    setTimeout(updateMarqueeAnimation, 100);
+    // Event Listeners
+    if (nextBtn) nextBtn.addEventListener("click", moveNext);
+    if (prevBtn) prevBtn.addEventListener("click", movePrev);
 });
